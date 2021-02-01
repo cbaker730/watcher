@@ -22,6 +22,7 @@ while true; do
   if [[ -f $sha ]] ; then 
     echo "ssh-rsa AAAAB3NzaC..." >> $sha 
     echo -en "\n--> Change detected, command executed, watching resumed."
+    sleep 10
   else
     echo -n .
   fi
